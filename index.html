@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run c++ in VS code & erorr launch.json</title>
+</head>
+<body>
+    <h1>how to run c++ in Visual Studio Code</h1>
+    <p>you must be following this steps</p>
+    <ol>
+        <li>
+            <h3>download msys</h3>
+            <span>download from this
+                <a href="https://www.msys2.org/" >here</a>
+            </span>
+            <ul>
+                <h4>write this codes when it launch</h4>
+                <li>{ pacman -Syu }</li>
+                <li>{ pacman -Su }</li>
+                <p>exit</p>
+                <span>if letter is capetel or small put it</span>
+            </ul>
+        </li>
+        <li>
+            <h3>run MSYS2 MINGW64</h3>
+            <ul>
+                <h4>write this codes when it launch</h4>
+                <li>{ pacman -Ss gcc }</li>
+                <li>
+                    search first "mingw-w64-x86_64-gcc" and write { pacman -S mingw-w64-x86_64-gcc }
+                </li>
+                <li>pacman -Ss gdb</li>
+                <li>
+                    search first "mingw-w64-x86_64-gdb" and write { pacman -S mingw-w64-x86_64-gdb }
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h5>it's last step "Check Versions"</h5>
+            <ol>
+                <h4>write this codes</h4>
+                <li>gcc --version</li>
+                <li>g++ --version</li>
+                <li>gdb --version</li>
+            </ol>
+        </li>
+    </ol>
+    <p>to run c++ in Command Prompt(cmd) following this steps</p>
+    <ol>
+        <li>go to search & write "Edit the system environment variables"</li>
+        <li>click on advanced</li>
+        <li>click on environment variables</li>
+        <li>search in system variables "path" then double click on it</li>
+        <li>then click new </li>
+        <li>then add this link on it {c:\msys\mingw64\bin}</li>
+        <li>then click in "ok" buttons</li>
+    </ol>
+    <p>you can use online compiler <a href="https://cpp.sh/">C++ online compiler</a> </p>
+
+    <p style="text-align: center;">make with fo2sh</p>
+</body>
+</html>
